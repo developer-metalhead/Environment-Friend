@@ -1,0 +1,505 @@
+{
+  "intents": [
+    {
+      "intent": "Greeting",
+      "examples": [
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "tips"
+        },
+        {
+          "text": "Waste Management Tips"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "start",
+      "examples": [
+        {
+          "text": "start"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Greeting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "good afternoon",
+          "synonyms": [
+            "afternoon",
+            "ga",
+            "gd afnun",
+            "noon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good evening",
+          "synonyms": [
+            "eve",
+            "evening",
+            "gd eve",
+            "ge",
+            "gud eveng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "gm",
+            "gud mrng",
+            "morning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hi",
+          "synonyms": [
+            "hello",
+            "'sup",
+            "sup"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "options",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "options",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Contacts",
+          "synonyms": [
+            "Contact",
+            "number"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Statistics",
+          "synonyms": [
+            "Statistic"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Waste Management Tips",
+          "synonyms": [
+            "tips"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tips",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Commercial Scale Tips",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Personal Tips",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1626264919132",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greeting || @Greeting",
+      "dialog_node": "node_5_1626264919132",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "options",
+      "parent": "node_5_1626264919132",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@options",
+      "dialog_node": "node_6_1626270182137"
+    },
+    {
+      "type": "standard",
+      "title": "tips",
+      "parent": "node_6_1626270182137",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@tips",
+      "dialog_node": "node_6_1626270267570",
+      "previous_sibling": "response_5_1626270352471"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "What you can do!!",
+            "source": "https://1.bp.blogspot.com/-GC2Q3TQXuvA/YO7-ZInsn3I/AAAAAAAADh8/uKJPKvYiFDADAOwTdZ8hDrOMeF4SNzZgACLcBGAsYHQ/w386-h547/poster.jpg",
+            "description": "Type 'hi' to continue.",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_6_1626270267570",
+      "conditions": "@tips:(Personal Tips)",
+      "dialog_node": "response_10_1626270634515"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Good morning. How may I assist you?",
+            "options": [
+              {
+                "label": "Waste Management Tips",
+                "value": {
+                  "input": {
+                    "text": "Waste Management Tips"
+                  }
+                }
+              },
+              {
+                "label": "Statsitics",
+                "value": {
+                  "input": {
+                    "text": "Statistics"
+                  }
+                }
+              },
+              {
+                "label": "Contacts",
+                "value": {
+                  "input": {
+                    "text": "Contacts"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1626264919132",
+      "conditions": "@Greeting:(good morning)",
+      "dialog_node": "response_3_1626265087814",
+      "previous_sibling": "node_6_1626270182137"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "file:///C:/Users/vikram/OneDrive/Desktop/HTML%20CSS/Edge%20Ledger%20Website/blog.html"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1626270182137",
+      "conditions": "@options:Statistics",
+      "dialog_node": "response_3_1626270344646",
+      "previous_sibling": "response_7_1626270284385"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Good Afternoon. How may I assist you?",
+            "options": [
+              {
+                "label": "Waste Management Tips",
+                "value": {
+                  "input": {
+                    "text": "Waste Management Tips"
+                  }
+                }
+              },
+              {
+                "label": "Statistics",
+                "value": {
+                  "input": {
+                    "text": "Statistics"
+                  }
+                }
+              },
+              {
+                "label": "Contacts",
+                "value": {
+                  "input": {
+                    "text": "Contacts"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1626264919132",
+      "conditions": "@Greeting:(good afternoon)",
+      "dialog_node": "response_5_1626265229158",
+      "previous_sibling": "response_3_1626265087814"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Good Evening. How may I assist you?",
+            "options": [
+              {
+                "label": "Waste Management Tips",
+                "value": {
+                  "input": {
+                    "text": "Waste Management Tips"
+                  }
+                }
+              },
+              {
+                "label": "Statistics",
+                "value": {
+                  "input": {
+                    "text": "Statistics"
+                  }
+                }
+              },
+              {
+                "label": "Contacts",
+                "value": {
+                  "input": {
+                    "text": "Contacts"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1626264919132",
+      "conditions": "@Greeting:(good evening)",
+      "dialog_node": "response_5_1626265241911",
+      "previous_sibling": "response_5_1626265229158"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Contact Details.",
+            "source": "https://1.bp.blogspot.com/-E5RA9BL1oPU/YO7xZ7E-lTI/AAAAAAAADh0/enE0OfEW14oKcLHlU9_04jCY0zZGMNpXACLcBGAsYHQ/s320/Contacts.jpg",
+            "description": "Type 'hi' to continue.",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_6_1626270182137",
+      "conditions": "@options:Contacts",
+      "dialog_node": "response_5_1626270352471",
+      "previous_sibling": "response_3_1626270344646"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "What tips do you need?",
+            "options": [
+              {
+                "label": "Commercial Scale Tips",
+                "value": {
+                  "input": {
+                    "text": "Commercial Scale Tips"
+                  }
+                }
+              },
+              {
+                "label": "Personal Tips",
+                "value": {
+                  "input": {
+                    "text": "Personal Tips"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1626270182137",
+      "conditions": "@options:(Waste Management Tips)",
+      "dialog_node": "response_7_1626270284385"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Follow these!!",
+            "source": "https://1.bp.blogspot.com/-2AiPqFJSCEs/YO8BBwu9lxI/AAAAAAAADiE/Cqkffu_RtO8p0_t5V9bs1BFrYiX6bOhtQCLcBGAsYHQ/w378-h535/Yellow%2BRed%2BTan%2BPlayful%2B%2526%2BCelebratory%2BTraditional%2BGraduation%2BPoster.jpg",
+            "description": "Type 'hi' to continue.",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_6_1626270267570",
+      "conditions": "@tips:(Commercial Scale Tips)",
+      "dialog_node": "response_7_1626270668663",
+      "previous_sibling": "response_10_1626270634515"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Hello. How may I assist you?",
+            "options": [
+              {
+                "label": "Waste Management Tips",
+                "value": {
+                  "input": {
+                    "text": "Waste Management Tips"
+                  }
+                }
+              },
+              {
+                "label": "Statistics",
+                "value": {
+                  "input": {
+                    "text": "Statistics"
+                  }
+                }
+              },
+              {
+                "label": "Contacts",
+                "value": {
+                  "input": {
+                    "text": "Contacts"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1626264919132",
+      "conditions": "@Greeting:hi",
+      "dialog_node": "response_7_1626288358779",
+      "previous_sibling": "response_5_1626265241911"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "title": "Hello I am a Waste Management Bot made by Team Skynet. How may I help you?",
+            "source": "https://1.bp.blogspot.com/-Y_6RkCt9KP8/YO8DRxDALkI/AAAAAAAADiU/-mrkwKAqrfcpjp7kSL9ASnVsjlo3fRatQCLcBGAsYHQ/s320/_Green%2Band%2BWhite%2BSchool%2BSupplies%2BPrimary%2BAbout%2BMe%2BPrimary%2BEducation%2BPresentation.jpg",
+            "response_type": "image"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Waste-Management",
+  "language": "en",
+  "description": ""
+}

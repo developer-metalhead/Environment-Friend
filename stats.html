@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico">
+  <title>Statistics</title>
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/utility.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body id="home">   
+   <header class="head blog">
+     <div class="navbar top" id="navbar">
+      <a href="./Index.html#home"><h1 class="logo">
+        <i class="fas fa-seedling"></i>
+          <span class="text-primary"> Environment</span> Friend
+       </h1>
+       </a>
+       <nav>
+            <ul>
+              <li><a href="./Index.html#home" id="current">Home</a></li>
+              <li><a href="./Index.html#about">About</a></li>
+              <li><a href="./Index.html#effect">Effects</a></li>
+              <li><a href="./Index.html#stats">Stats</a></li>
+              <li><a href="./Index.html#vln">Volunteer</a></li>
+            </ul>
+       </nav>
+      </div>
+
+      <div class="content">
+        <h1>Statistics</h1>
+       
+      </div>
+    </header>
+
+    <main>
+
+      <article id="stats1" class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img src="./img/stats/stats2.png" alt="stats">
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-light">
+
+              <h1>How much plastic enters Ocean.</h1>
+              
+              <p>
+                To understand the magnitude of input of plastics to the natural environment and the world’s oceans, we must understand various elements of the plastic production, distribution and waste management chain. This is crucial, not only in understanding the scale of the problem but in implementing the most effective interventions for reduction.
+                The data and visualizations which follow in this entry provide this overview step-by-step. This overview is summarized in the figure.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="stats3" class=" flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img src="./img/stats/stats1.jpg" alt="stats">
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-dark">
+               
+              <h1>Waste Generation Pie</h1>
+              
+              <p>
+                Global plastic production to fate
+                In the figure we summarize global plastic production to final fate over the period 1950 to 2015.                
+                This is given in cumulative million tonnes. 
+                Of the 5800 million tonnes of primary plastic no longer in use, only 9 percent has been recycled since 1950.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article id="stats2" class=" flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column1">
+              <img src="./img/stats/stats3.jpg" alt="stats">
+            </div>
+          </div>
+          <div class="column">
+            <div class="column2 bg-light">
+               
+              <h1>Global Mismanaged Waste</h1>
+             
+              <p>
+                The data presented in the analysis above is for the year 2010; how is this global picture likely to change over time? Jambeck et al. (2015) also project mismanaged plastic waste production for the year 2025.
+              </p>
+
+              <p>
+                These results are presented in the map as the share of global mismanaged waste by country, and aggregated by region. Absolute figures (in tonnes per year) by country is available to explore here. 
+              </p>
+              <p>
+                Overall we see that the global distribution is projected to change only slightly; whilst China’s contribution falls by a couple of percentage points, East Asia & Pacific maintain around 60 percent of the total. South Asia’s contribution — largely driven by India — increases slightly, as does Sub-Saharan Africa. Latin America, the Middle East & North Africa, Europe and North America all fall in relative terms
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    
+
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>Copyright &copy;, The Environment Friend 2021</p>
+      <p>A SKYNET Initiative</p>
+    </footer>
+
+    <script>
+
+      let scrolled  = false;
+
+
+      const navbar =document.getElementById('navbar');
+      window.onscroll = function(){
+        if(window.pageYOffset>100){
+          navbar.classList.remove('top');
+          if(!scrolled){
+            navbar.style.transform= 'translateY(-70px)';
+          }
+          setTimeout(function(){
+            navbar.style.transform= 'translateY(0px)';
+            scrolled=true;
+          },250)
+        }else
+        {
+          navbar.classList.add('top');
+          scrolled=false;
+        }
+      }
+    </script>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "054589b4-f12f-45df-973a-08015606092e", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "5d5be852-1fef-4f9a-91a7-d7a5dd9910ee", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>

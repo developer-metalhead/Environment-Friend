@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico">
+  <title>Why Waste Managemnet?</title> 
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/utility.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body id="home">  
+   <header class="head blog">
+     <div class="navbar top" id="navbar">
+      <a href="./Index.html#home"><h1 class="logo">
+        <i class="fas fa-seedling"></i>
+          <span class="text-primary"> Environment</span> Friend
+       </h1>
+       </a>
+       <nav>
+            <ul>
+              <li><a href="./Index.html#home" id="current">Home</a></li>
+              <li><a href="./Index.html#about">About</a></li>
+              <li><a href="./Index.html#effect">Effects</a></li>
+              <li><a href="./Index.html#stats">Stats</a></li>
+              <li><a href="./Index.html#vln">Volunteer</a></li>
+            </ul>
+       </nav>
+      </div>
+
+      <div class="content">
+        <h1>Why Waste Management?</h1>
+       
+      </div>
+    </header>
+
+    <main>
+
+      <section class="posts">
+        <h2>
+          Why is Waste Managemnet Important?
+        </h2>
+      
+
+        <img src="./img/home/help.jpg" alt="">
+
+        <p>
+          Keeping your environment clean is one of the prerequisites for leading a healthy and happy life!
+
+          Many of you might not have thought much about a proper waste disposal, but there are several compelling reasons as to why waste management is crucial.  Improper disposal of waste has negative ramifications. If you don’t dispose of your waste properly, it will end up polluting the environment and also facilitate the production of greenhouse gas.        </p>
+        <p>
+          When it comes to waste management it is very important to learn how to gain knowledge about it. As it has a big important impact on our lives and the environment. Waste management is a burning issue in the modern world. The avoidance and reduction of waste is a very important part of waste management.
+        </p>
+        <p>
+          Green lifestyle helps save money by reducing health bills, by eating healthy foods, breathing healthy air and drinking clean water. So, if you want a healthy lifestyle, think green and act green!
+        </p>
+
+        <p>
+          Why is waste management important? Unlike hundreds of years ago, most of our waste increasingly belongs in the biodegradable category. This means simple waste management techniques such as burying and burning aren’t as effective any more. Here’s a few reasons why waste management is very important today…   Waste management can be profitable Recycling and waste management can lead to bigger profits for companies – especially in the food industry. Simply by planning and portioning ingredients, as well as keeping an efficient supply chain, companies such as restaurants, supermarkets and food factories can boost profits by as much as 10%. This also applies to other industries such as construction – where tightening up stock control can save on waste and increase profits. </p>
+          <p>  Boost company reputation Efficient waste management and recycling can boost your reputation in your industry. Potential and existing customers will see you as a responsible and sustainable company that cares about the environment, the future and the population.   It preserves the environment Unfortunately we can’t simply burn all waste we come across. This is because it releases toxins, pollutes the air and can even contribute towards the destruction of the ozone layer. Some waste is hazardous and may cause harm to the environment. This includes plants, animals and habitats. Toxic materials can kill off living things and pollute bodies of water such as lakes and rivers.   Reduces production costs An incredible benefit of waste management is it can cut overall production costs in the long run. 
+          </p>
+      </section>
+
+    </main>
+
+    
+
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+      </div>
+      <p>Copyright &copy;, The Environment Friend 2021</p>
+      <p>A SKYNET Initiative</p>
+    </footer>
+
+    <script>
+
+      let scrolled  = false;
+
+
+      const navbar =document.getElementById('navbar');
+      window.onscroll = function(){
+        if(window.pageYOffset>100){
+          navbar.classList.remove('top');
+          if(!scrolled){
+            navbar.style.transform= 'translateY(-70px)';
+          }
+          setTimeout(function(){
+            navbar.style.transform= 'translateY(0px)';
+            scrolled=true;
+          },250)
+        }else
+        {
+          navbar.classList.add('top');
+          scrolled=false;
+        }
+      }
+    </script> 
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "054589b4-f12f-45df-973a-08015606092e", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "5d5be852-1fef-4f9a-91a7-d7a5dd9910ee", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>

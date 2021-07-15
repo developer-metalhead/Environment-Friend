@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400&display=swap');
+
+*
+{
+  margin: 0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+ul
+{
+  list-style: none;
+}
+
+a
+{
+  text-decoration: none;
+  color: #222;
+}
+ 
+h1,h2
+{
+  padding: 10px 0px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+p
+{
+  margin: 10px 0px;
+}
+
+img
+{
+  width:100%;
+}
+
+
+.navbar.top
+{
+  background: transparent;
+}
+
+.navbar
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  color: #fff;
+  opacity: 1;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  padding: 0 30px;
+  top: 0px;
+  transition: 0.5s ease-in;
+}
+
+.navbar a
+{
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0px 5px;
+}
+.navbar a:hover
+{
+  border-bottom: 2px #28a745 solid;
+}
+
+.navbar .logo
+{
+  font-weight: 400;
+}
+
+.navbar ul
+{
+  display: flex;
+}
+
+
+.head
+{
+  background: url('../img/home/showcase.jpg') center center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.head.stats
+{
+  background: url("../img/home/stats.jpg") no-repeat center center/cover;
+  height: 40vh;
+}
+
+
+
+.head .content
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0px 20px;
+}
+
+.head .content h1
+{
+  font-size: 60px;
+}
+
+.head .content p
+{
+  font-size: 23px;
+}
+
+.head::before
+{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.head *
+{
+  z-index: 1;
+}
+
+
+.icons
+{
+  display: flex;
+  text-align: center;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 33%;
+  
+}
+
+.icons .box
+{
+  margin: 40px 20px;
+}
+.icons .box i
+{
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background-color:#28a745 ;
+  padding: 13px;
+}
+
+.about
+{
+  background: #28a745;
+  display: flex;
+}
+
+.about .img-sol
+{
+  width: 100%;
+  height:450px;
+ 
+}
+
+.about .img-sol img
+{
+  height: 100%;
+}
+
+.about .txt-sol
+{ 
+  width: 100%;
+  background: #28a745;
+  color: white;
+  align-self: center;
+  padding: 0px 30px;
+}
+
+.about .txt-sol h1
+{
+  font-size: 35px;
+}
+
+.about .txt-sol a
+{
+  border: white 1px solid;
+}
+
+
+.effect img:hover
+{
+  opacity: 0.7;
+}
+
+.r3 img
+{
+  border-radius: 50%;
+}
+
+.volunteer-form
+{
+  padding: 30px 0;
+  width: 100%;
+}
+
+.volunteer-form label
+{
+  display: block;
+  margin-bottom: 3px;
+}
+
+.volunteer-form .formcontrol
+{
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.volunteer-form .formcontrol input
+{
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  border: #222 1px solid;
+  border-radius: 5px;
+}
+
+.volunteer-form .formcontrol input:focus
+{
+  outline-color: #28a745; 
+}
+
+.volunteer-form .btn
+{
+  width: 100%;
+  padding: 12px
+}
+
+.posts
+{
+  padding: 50px 30px;
+}
+
+.posts h2
+{
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #222 1px solid;
+}
+
+.posts meta
+{
+  margin-bottom: 30px;
+}
+
+.posts img
+{
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+  
+}
+
+
+
+.footer
+{
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer a
+{
+  font-size: 30px;
+  margin: 0px 15px ;
+  color: #ccc;
+}
+
+.footer a:hover
+{
+  color: #28a745;
+}
+
+
+@media(max-width:768px)
+{
+  .navbar
+  {
+    flex-direction: column;
+    height: 130px;
+    padding: 20px ;
+    
+  }
+
+  
+  .navbar a
+  {
+    padding: 10px;
+    margin: 0px 3px;
+  }
+
+  #content h1
+  {
+    padding-top: 180px;
+    font-size: 50px ;
+  }
+
+
+
+  .icons
+  {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column
+  {
+    flex:100%;
+    max-width: 100%;
+  }
+
+  
+ 
+
+  .effect img
+  {
+    width: 48%;
+    height: auto;
+  }
+
+  .main
+  {
+    margin: 5px;
+    padding: 20px;
+  }
+
+  .head.stats
+  {
+    height: 50vh;
+    padding-top: 50px;
+  }
+
+
+
+
+  .footer
+  {
+    height: 100px;
+    margin: 0px 3px;
+    
+  }
+
+  .footer p
+  {
+    font-size: 14px;
+  }
+  .footer a
+  {
+    font-size: 20px;
+  }
+}
