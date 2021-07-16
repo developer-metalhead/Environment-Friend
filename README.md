@@ -24,7 +24,7 @@ This was a website our team Skynet consisting of Chandra Pratap Singh Chauhan (@
   <tr>
     <td align="center"><a href="https://linktr.ee/Kumar_Satwik"><img src="https://avatars3.githubusercontent.com/u/1505101?v=4" width="80px;" alt="Kumar Satwik"/><br /><sub><b>Dominik Kundel</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=dkundel" title="Code">💻</a> <a href="#ideas-dkundel" title="Ideas, Planning, & Feedback">🤔</a></td>
 
-      </tr>
+      
 </table>
     
     
