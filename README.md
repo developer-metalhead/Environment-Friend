@@ -25,9 +25,9 @@ Thanks to these people.
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
 <table>
-  <tr>
+
     <td align="center"><a href="https://linktr.ee/Kumar_Satwik"><img src="https://1.bp.blogspot.com/-pUANkEzBB7Q/YPFzwOyZI4I/AAAAAAAADkE/5hmVFXc3YoIgNPHh-mOZ9COagY3WE8c6wCLcBGAsYHQ/s0/Profile%2Bpic.png" width="80px;" alt="Kumar Satwik"/><br /><sub><b>Kumar Satwik</b><b>developer-metalhead</b></a><br /><a href="https://github.com/developer-metalhead" title="Code">💻</a> <a href="#ideas-ksatwik" title="Programming"</a></td>
-      </tr>
+
 </table>
     
 banji7902: https://github.com/banji7902
