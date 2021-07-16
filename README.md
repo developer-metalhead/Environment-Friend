@@ -18,7 +18,7 @@ This was a website our team Skynet consisting of Chandra Pratap Singh Chauhan (@
 5) Clean, user friendly navigation.
 
 
-### Contributors
+## Contributors
 
 <table>
   <tr>
