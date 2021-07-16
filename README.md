@@ -26,7 +26,7 @@ Thanks to these people.
 
 <table>
   <tr>
-    <td align="center"><a href="https://linktr.ee/Kumar_Satwik"><img src="https://1.bp.blogspot.com/-RG47s2Z350k/YPF3XuG6dYI/AAAAAAAADkQ/awZxoOc4o5YSUrsVZu3zfVvpmsKH3DTkQCLcBGAsYHQ/s320/WhatsApp%2BImage%2B2021-07-16%2Bat%2B17.40.50.jpeg" width="80px;" alt="Kumar Satwik"/><br /><sub><b>Kumar Satwik</b></sub></a><br /><sub><b>developer-metalhead</b></sub></a><br /><a href="https://github.com/developer-metalhead" title="Code">💻</a> <a href="#ideas-ksatwik" title="Chatbot"🧑‍💻</a></td>
+    <td align="center"><a href="https://linktr.ee/Kumar_Satwik"><img src="https://1.bp.blogspot.com/-pUANkEzBB7Q/YPFzwOyZI4I/AAAAAAAADkE/5hmVFXc3YoIgNPHh-mOZ9COagY3WE8c6wCLcBGAsYHQ/s0/Profile%2Bpic.png" width="80px;" alt="Kumar Satwik"/><br /><sub><b>Kumar Satwik</b></sub></a><br /><sub><b>developer-metalhead</b></sub></a><br /><a href="https://github.com/developer-metalhead" title="Code">💻🧑</a> <a href="#ideas-ksatwik" title="Chatbot💻</a></td>
 
       
 </table>
