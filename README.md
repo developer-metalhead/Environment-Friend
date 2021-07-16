@@ -22,7 +22,7 @@ This was a website our team Skynet consisting of Chandra Pratap Singh Chauhan (@
 
 <table>
   <tr>
-    <td align="center"><a href="https://linktr.ee/Kumar_Satwik"><img src="https://1.bp.blogspot.com/-pUANkEzBB7Q/YPFzwOyZI4I/AAAAAAAADkE/5hmVFXc3YoIgNPHh-mOZ9COagY3WE8c6wCLcBGAsYHQ/s0/Profile%2Bpic.png" width="80px;" alt="Kumar Satwik"/><br /><sub><b>Kumar Satwik</b><b>(developer metalhead)</b></sub></a><br /><a href="" title="Code">💻</a> <a href="#ideas-ksatwik" title="Chatbot"🧑‍💻</a></td>
+    <td align="center"><a href="https://linktr.ee/Kumar_Satwik"><img src="https://1.bp.blogspot.com/-pUANkEzBB7Q/YPFzwOyZI4I/AAAAAAAADkE/5hmVFXc3YoIgNPHh-mOZ9COagY3WE8c6wCLcBGAsYHQ/s0/Profile%2Bpic.png" width="80px;" alt="Kumar Satwik"/><br /><sub><b>Kumar Satwik</b></sub></a><br /><sub><b>developer-metalhead</b></sub></a><br /><a href="" title="Code">💻</a> <a href="#ideas-ksatwik" title="Chatbot"🧑‍💻</a></td>
 
       
 </table>
