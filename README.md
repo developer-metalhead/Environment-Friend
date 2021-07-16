@@ -27,6 +27,7 @@ Thanks to these people.
 <table>
 <tr>
     <td align="center"><a href="https://linktr.ee/Kumar_Satwik"><img src="https://1.bp.blogspot.com/-pUANkEzBB7Q/YPFzwOyZI4I/AAAAAAAADkE/5hmVFXc3YoIgNPHh-mOZ9COagY3WE8c6wCLcBGAsYHQ/s0/Profile%2Bpic.png" width="80px;" alt="Kumar Satwik"/><br /><sub><b>Kumar Satwik</b></a><br /><sub><b>developer-metalhead</b><br /><a href="https://github.com/developer-metalhead" title="Code">💻</a> <a href="#ideas-ksatwik" title="Programming"</a></td>
+ <td align="center"><a href="https://github.com/theBatman07"><img src="https://1.bp.blogspot.com/-5F3QZDa7RGM/YPHDmDdQXQI/AAAAAAAADkk/WXgn5jDU7VUroLwMmefs0kNEUNz7c5gNgCLcBGAsYHQ/s0/gaurav.png" width="80px;" alt="Gaurav Khater"/><br /><sub><b>Gaurav Khater</b></a><br /><sub><b>theBatman07</b><br /><a href="https://github.com/theBatman07" title="Code">💻</a> <a href="#ideas-gkhater" title="Programming"</a></td>
     </tr>
 </table>
     
