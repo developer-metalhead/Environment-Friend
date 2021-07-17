@@ -36,15 +36,6 @@ Thanks to these people.
     </tr>
 </table>
     
-banji7902: https://github.com/banji7902
-
-developer-metalhead: https://github.com/developer-metalhead
-
-theBatman07: https://github.com/theBatman07
-
-harshendu341: https://github.com/harshendu341
-
-
 
 
 
