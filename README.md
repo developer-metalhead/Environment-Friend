@@ -26,15 +26,19 @@ Thanks to these people.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
-<table>
 
-    <td align="center"><a href="https://github.com/banji7902"><img src="https://1.bp.blogspot.com/-nAWTUQWTlus/YPHqYys3pII/AAAAAAAADks/qAyc512M2Xsucuou2WAImgB-TrecmP6SwCLcBGAsYHQ/s0/chandra.png" width="80px;" alt="Chandra Pratap"/><br /><sub><b>Chandra Pratap</b></a><br /><sub><b>banji7902</b><br /><a href="https://github.com/banji7902" title="Code">💻</a> <a href="#ideas-cpratap" title="Programming"</a></td>
+
+<table>
+ <tr>
+<td align="center"><a href="https://github.com/banji7902"><img src="https://1.bp.blogspot.com/-nAWTUQWTlus/YPHqYys3pII/AAAAAAAADks/qAyc512M2Xsucuou2WAImgB-TrecmP6SwCLcBGAsYHQ/s0/chandra.png" width="80px;" alt="Chandra Pratap"/><br /><sub><b>Chandra Pratap</b></a><br /><sub><b>banji7902</b><br /><a href="https://github.com/banji7902" title="Code">💻</a> <a href="#ideas-cpratap" title="Programming"</a></td>
     <td align="center"><a href="https://linktr.ee/Kumar_Satwik"><img src="https://1.bp.blogspot.com/-pUANkEzBB7Q/YPFzwOyZI4I/AAAAAAAADkE/5hmVFXc3YoIgNPHh-mOZ9COagY3WE8c6wCLcBGAsYHQ/s0/Profile%2Bpic.png" width="80px;" alt="Kumar Satwik"/><br /><sub><b>Kumar Satwik</b></a><br /><sub><b>developer-metalhead</b><br /><a href="https://github.com/developer-metalhead" title="Code">💻</a> <a href="#ideas-ksatwik" title="Programming"</a></td>
  <td align="center"><a href="https://github.com/theBatman07"><img src="https://1.bp.blogspot.com/-5F3QZDa7RGM/YPHDmDdQXQI/AAAAAAAADkk/WXgn5jDU7VUroLwMmefs0kNEUNz7c5gNgCLcBGAsYHQ/s0/gaurav.png" width="80px;" alt="Gaurav Khater"/><br /><sub><b>Gaurav Khater</b></a><br /><sub><b>theBatman07</b><br /><a href="https://github.com/theBatman07" title="Code">💻</a> <a href="#ideas-gkhater" title="Programming"</a></td>
    <td align="center"><a href="https://github.com/harshendu341"><img src="https://1.bp.blogspot.com/-KNjp5mj7rDM/YPHqY36nFRI/AAAAAAAADkw/NOJSF3mQQXEqCleoUYPG7iMqHlu8beoHACLcBGAsYHQ/s0/harsh.png" width="80px;" alt="Harshendu Mahto"/><br /><sub><b>Harshendu Mahto</b></a><br /><sub><b>harshendu341</b><br /><a href="https://github.com/harshendu341" title="Code">💻</a> <a href="#ideas-hmahto" title="Programming"</a></td>
        
-   
+   </tr>
 </table>
+    
+
     
 
 ## Website Screenshots
