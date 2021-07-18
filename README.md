@@ -20,7 +20,7 @@ This was a website our team Skynet consisting of Chandra Pratap Singh Chauhan (@
 6) Informative website.
 
 
-## Contributors
+## Contributor
 
 Thanks to these people.
 
