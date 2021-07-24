@@ -21,7 +21,7 @@ This was a website our team Skynet consisting of Chandra Pratap Singh Chauhan (@
 
 ## Contributors
 
-Thanks to these people.
+Thanks to these amazing people.
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
